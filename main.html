@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Muito Bom 3000</title>
+  <link rel="stylesheet" href="style.css">
+  <audio loop id="background-audio">
+    <source src="rain.mp3" type="audio/mpeg">
+  </audio>
+</head>
+<body>
+  <div class="margin">
+    <h1>Site Muito Bom 3000</h1>
+    <div class="form">
+      <form action="./teste.html" method="get" enctype="multipart/form-data">
+        <label class="small-label">Nome</label>
+        <input type="text" name="name" placeholder="Nome" required>
+        <br>
+        <label class="small-label">E-mail</label>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <br>
+        <label class="small-label">Senha</label>
+        <input type="password" name="password" placeholder="Senha" required>
+        <br>
+        <label class="small-label">Foto</label>
+        <input type="file" id="image-upload" name="pfp" accept="image/*">
+        <img id="image-preview" width="300" style="margin-left: 10px;">
+        <br>
+        <label>Concorda com os termos?</label>
+        <input type="checkbox" class="checkbox">
+        <br>
+        <br>
+        <input type="submit" style="width: 98%;" value="Envia pra nóis">
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
