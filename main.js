@@ -1,19 +1,18 @@
-const backgroundAudio = document.getElementById("background-audio")
-backgroundAudio.play()
+const urlParams = new URLSearchParams(window.location.search);
 
-const chooseFile = document.getElementById("image-upload");
-const imgPreview = document.getElementById("image-preview");
+const username = urlParams.get('name');
+if (username) {
+    document.getElementById('display-user').textContent += username + "!!!";
+}
 
-chooseFile.addEventListener("change", function () {
-    const files = this.files;
-    if (files && files.length) {
-        const selectedFile = files[0];
-        const reader = new FileReader();
+const pfp = urlParams.get('pfp');
+if (pfp) {
+    const pfpDisplay = document.getElementById('pfp-display')
+    const reader = new FileReader();
 
-        reader.addEventListener("load", function () {
-            imgPreview.src = reader.result;
-        }, false);
+    reader.addEventListener("load", function () {
+        pfpDisplay.src = reader.result;
+    }, false);
 
-        reader.readAsDataURL(selectedFile);
-    }
-});
+    reader.readAsDataURL(pfp);
+}
