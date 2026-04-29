@@ -18,6 +18,7 @@ nav {
   justify-content: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 0px 0px 15px 15px;
+  z-index: 1;
 }
 
 nav ul {
@@ -28,6 +29,10 @@ nav ul {
 
 nav li {
   position: relative;
+}
+
+nav ul ul li {
+  width: 100%;
 }
 
 nav a {
@@ -53,7 +58,6 @@ nav ul ul {
   min-width: 200px;
   flex-direction: column;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
   border-radius: 0px 0px 15px 15px;
 }
 
@@ -63,7 +67,7 @@ nav li:hover > ul {
 
 nav ul ul a {
   padding: 15px 20px;
-  border-top: 1px solid #ffffff2d;
+  border-top: 3px solid #ffffff2d;
   border-radius: 15px;
 }
 
