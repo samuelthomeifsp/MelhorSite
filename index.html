@@ -5,60 +5,70 @@
   <title>Site Muito Bom 3000</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="margin">
-    <div class="regras">
-      <h1 style="margin-left: 30px">Site Muito Bom 3000</h1>
-      <ol type="I">
-        <li>Não pode jogar lixo no chão.</li>
-        <li>Não pode bater no amiginho.</li>
-        <li>PODE farmar aura!</li>
-        <li>PODE fazer o six seven!</li>
-        <li>Eu vou farmar aura na escola.</li>
-        <li>
-          <h3 style="padding-left: 20px;">Sempre lembrar dos 4Rs.</h3>
-          <ol type="I">
-            <li>Reforma</li>
-            <li>Revolução</li>
-            <li>Restruturação</li>
-            <li>Radical</li>
-          </ol>
+<body style="background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d2b9dfb.png');">
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre nós</a></li>
+      <li>
+        <a href="#">Serviços ∨</a>
+        <ul>
+          <li><a href="#">Desenvolvimento</a></li>
+          <li><a href="#">Design Gráfico</a></li>
+          <li><a href="#">Marketing Digital</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="panel" style="background-color: rgb(87, 0, 128);">
+      <h1>Site Muito Bom 3000</h1>
+      <ul>
+        <li class="innie">Não pode jogar lixo no chão.</li>
+        <li class="innie">Não pode bater no amiginho.</li>
+        <li class="innie">PODE farmar aura!</li>
+        <li class="innie">PODE fazer o six seven!</li>
+        <li class="innie">Eu vou farmar aura na escola.</li>
+        <li class="innie">
+          <img src="https://www.jus21.com.br/imagemsite/1148/regras.png" width=200>
         </li>
-        <li>Boa tarde.</li>
-      </ol>
+        <li class="innie">Boa tarde.</li>
+      </ul>
     </div>
     <br>
-    <div class="form">
+    <div class="panel" style="background-color: rgb(50, 83, 54);">
+      <h1>Registrar...</h1>
       <form action="./main.html" method="get" enctype="multipart/form-data">
         <div class="innie">
-          <label class="small-label">Nome</label>
+          <label>Nome</label>
+          <br>
           <input type="text" name="name" placeholder="Nome" required>
         </div>
         <div class="innie">
-          <label class="small-label">E-mail</label>
+          <label>E-mail</label>
+          <br>
           <input type="email" name="email" placeholder="E-mail" required>
         </div>
         <div class="innie">
-          <label class="small-label">Senha</label>
+          <label>Senha</label>
+          <br>
           <input type="password" name="password" placeholder="Senha" required>
         </div>
         <div class="innie">
-          <label class="small-label">Foto</label>
+          <label>Foto</label>
+          <br>
           <input type="file" id="image-upload" name="pfp" accept="image/*">
           <img id="image-preview" width="300" style="margin-left: 10px;">
         </div>
         <div class="innie">
           <label>Concorda com os termos?</label>
-          <input type="checkbox" class="checkbox">
+          <input type="checkbox" class="checkbox" required>
         </div>
-        <br>
-        <br>
-        <div class="innie">
-          <input type="submit" style="width: 98%;" value="Envia pra nóis">
-        </div>
+        <input type="submit" style="width: 100%;" value="Envia pra nóis">
       </form>
     </div>
-  </div>
+  </main>
   <script src="index.js"></script>
 </body>
 </html>
