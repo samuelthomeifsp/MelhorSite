@@ -24,48 +24,46 @@
   <main>
     <div class="panel" style="background-color: rgb(87, 0, 128);">
       <h1>Site Muito Bom 3000</h1>
-      <ul>
-        <li class="innie">Não pode jogar lixo no chão.</li>
-        <li class="innie">Não pode bater no amiginho.</li>
-        <li class="innie">PODE farmar aura!</li>
-        <li class="innie">PODE fazer o six seven!</li>
-        <li class="innie">Eu vou farmar aura na escola.</li>
-        <li class="innie">
+      <ol type="I" class="vbox">
+        <li class="hbox">Não pode jogar lixo no chão.</li>
+        <li class="hbox">Não pode bater no amiginho.</li>
+        <li class="hbox">PODE farmar aura!</li>
+        <li class="hbox">PODE fazer o six seven!</li>
+        <li class="hbox">Eu vou farmar aura na escola.</li>
+        <li class="hbox">
           <img src="https://www.jus21.com.br/imagemsite/1148/regras.png" width=200>
         </li>
-        <li class="innie">Boa tarde.</li>
-      </ul>
+        <li class="hbox">Boa tarde.</li>
+      </ol>
     </div>
     <br>
     <div class="panel" style="background-color: rgb(50, 83, 54);">
       <h1>Registrar...</h1>
-      <form action="./main.html" method="get" enctype="multipart/form-data">
-        <div class="innie">
+      <br>
+      <form action="./main.html" method="get" enctype="multipart/form-data" class="vbox">
+        <div class="vbox">
           <label>Nome</label>
-          <br>
           <input type="text" name="name" placeholder="Nome" required>
         </div>
-        <div class="innie">
+        <div class="vbox">
           <label>E-mail</label>
-          <br>
           <input type="email" name="email" placeholder="E-mail" required>
         </div>
-        <div class="innie">
+        <div class="vbox">
           <label>Senha</label>
-          <br>
           <input type="password" name="password" placeholder="Senha" required>
         </div>
-        <div class="innie">
+        <div class="vbox">
           <label>Foto</label>
-          <br>
           <input type="file" id="image-upload" name="pfp" accept="image/*">
           <img id="image-preview" width="300" style="margin-left: 10px;">
         </div>
-        <div class="innie">
+        <div class="hbox">
           <label>Concorda com os termos?</label>
           <input type="checkbox" class="checkbox" required>
         </div>
-        <input type="submit" style="width: 100%;" value="Envia pra nóis">
+        <br>
+        <input type="submit" style="background-color: rgba(0, 0, 0, 0.3); width: 97%;" value="Envia pra nóis">
       </form>
     </div>
   </main>
