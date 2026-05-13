@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Muito Bom 3000</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js"></script>
+</head>
+<body style="background-image: url('https://cdn.wallpapersafari.com/10/89/MF8jno.jpg');">
+    <div id="nav-placeholder"></div>
+    <script src="nav.js"></script>
+    <main>
+        <div class="panel">
+            <h1>Registrar...</h1>
+            <br>
+            <form action="./main.html" method="get" enctype="multipart/form-data" class="vbox invisible">
+                <div class="vbox">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Nome" required>
+                </div>
+                <div class="vbox">
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="vbox">
+                    <label>Senha</label>
+                    <input type="password" name="password" placeholder="Senha" required>
+                </div>
+                <div class="vbox">
+                    <label>Foto</label>
+                    <input type="file" id="image-upload" name="pfp" accept="image/*">
+                    <img id="image-preview" width="300" style="margin-left: 10px;">
+                </div>
+                <div class="hbox">
+                    <label>Concorda com os termos?</label>
+                    <input type="checkbox" class="checkbox" required>
+                </div>
+                <br>
+                <input type="submit" style="background-color: rgba(0, 0, 0, 0.3); width: 97%;" value="Envia pra nóis">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

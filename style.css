@@ -10,69 +10,6 @@ body {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav {
-  position: sticky;
-  top: 0px;
-  background: linear-gradient(#000a, #0000);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 0px 0px 15px 15px;
-  z-index: 100;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-nav li {
-  position: relative;
-}
-
-nav a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 20px 30px;
-  border-radius: 15px;
-}
-
-nav a:hover {
-  background: linear-gradient(#ffffff48, #6d6d6d46);
-}
-
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 200px;
-  flex-direction: column;
-  backdrop-filter: blur(20px);
-}
-
-nav li:hover > ul {
-  display: flex;
-}
-
-nav ul ul li {
-  width: 100%;
-}
-
-nav ul ul a {
-  background: linear-gradient(#00000013, #ffffff21);
-  padding: 15px 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(20px);
-}
-
-nav ul ul a:hover {
-  background: linear-gradient(#ffffff48, #6d6d6d46);
-}
-
 main {
   margin-top: 20px;
   display: flex;
@@ -104,6 +41,12 @@ main {
 
 .panel, .vbox {
   flex-direction: column;
+}
+
+.invisible {
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 input {

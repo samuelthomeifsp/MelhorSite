@@ -6,25 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-image: url('https://cdn.wallpapersafari.com/10/89/MF8jno.jpg');">
-  <nav>
-    <ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Sobre nós</a></li>
-      <li>
-        <a href="#">Serviços ∨</a>
-        <ul>
-          <li><a href="#">Desenvolvimento</a></li>
-          <li><a href="#">Design Gráfico</a></li>
-          <li><a href="#">Marketing Digital</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </nav>
+  <div id="nav-placeholder"></div>
+  <script src="nav.js"></script>
   <main>
     <div class="panel">
       <h1>Site Muito Bom 3000</h1>
-      <ol type="I" class="vbox">
+      <ol type="I" class="vbox invisible">
         <li class="hbox">Não pode jogar lixo no chão.</li>
         <li class="hbox">Não pode bater no amiginho.</li>
         <li class="hbox">PODE farmar aura!</li>
@@ -36,37 +23,6 @@
         <li class="hbox">Boa tarde.</li>
       </ol>
     </div>
-    <br>
-    <div class="panel">
-      <h1>Registrar...</h1>
-      <br>
-      <form action="./main.html" method="get" enctype="multipart/form-data" class="vbox">
-        <div class="vbox">
-          <label>Nome</label>
-          <input type="text" name="name" placeholder="Nome" required>
-        </div>
-        <div class="vbox">
-          <label>E-mail</label>
-          <input type="email" name="email" placeholder="E-mail" required>
-        </div>
-        <div class="vbox">
-          <label>Senha</label>
-          <input type="password" name="password" placeholder="Senha" required>
-        </div>
-        <div class="vbox">
-          <label>Foto</label>
-          <input type="file" id="image-upload" name="pfp" accept="image/*">
-          <img id="image-preview" width="300" style="margin-left: 10px;">
-        </div>
-        <div class="hbox">
-          <label>Concorda com os termos?</label>
-          <input type="checkbox" class="checkbox" required>
-        </div>
-        <br>
-        <input type="submit" style="background-color: rgba(0, 0, 0, 0.3); width: 97%;" value="Envia pra nóis">
-      </form>
-    </div>
   </main>
-  <script src="index.js"></script>
 </body>
 </html>
