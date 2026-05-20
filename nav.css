@@ -1,82 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-  
-  nav {
-    position: relative;
-    top: 0px;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-  }
-  
-  nav::before {
-    content: "";
-    position: absolute;
-    inset: 0; 
-    background: linear-gradient(#000a, #0000);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 0px 0px 15px 15px;
-    z-index: -1;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  nav li {
-    position: relative;
-    height: 100%;
-  }
-  
-  nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 20px 10px;
-    border-radius: 15px;
-    background-color: #0000;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    background-color: #fff1;
-  }
-  
-  nav ul ul {
-    display: none;
-    position: absolute;
-    min-width: 200px;
-    flex-direction: column;
-    background-color: #0000;
-    transition: transform 1s ease-in-out;
-  }
-  
-  nav li:hover > ul {
-    display: flex;
-    transform: translateY(0);
-  }
-  
-  nav ul ul li {
-    width: 100%;
-  }
-  
-  nav ul ul a {
-    padding: 15px 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-color: #0000;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  nav ul ul a:hover {
-    background-color: #fff1;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+nav {
+  position: relative;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#0006, #0000);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 15px 15px;
+  z-index: -1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  position: relative;
+  height: 100%;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 15px;
+  background-color: #0000;
+  transition: all 0s;
+}
+
+nav a:hover {
+  background-color: #fff3;
+  transition: background-color 0.3s ease-in;
+}
+
+nav ul ul {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  min-width: 200px;
+  flex-direction: column;
+  background: none;
+  transform: translateY(50px);
+  transition: all 0s;
+}
+
+nav li:hover ul {
+  visibility: visible;
+  transform: translateY(0px);
+  transition: transform 0.3s ease-in;
+}
+
+nav ul ul li {
+  width: 100%;
+}
+
+nav ul ul a {
+  opacity: 0;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0s;
+}
+
+nav li:hover ul a {
+  opacity: 1;
+  transition: background-color 0.3s ease-in, opacity 0.3s ease-in;
+}

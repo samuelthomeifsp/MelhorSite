@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Log-in</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="login.js"></script>
+    <meta charset="UTF-8">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
 </head>
 <body style="background-image: url('https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg');">
-    <div style="position: sticky;" id="nav-placeholder"></div>
+    <div id="nav-placeholder"></div>
     <script src="nav.js"></script>
     <main>
         <div class="panel">
             <h1>Registrar...</h1>
             <br>
-            <form action="./main.html" method="get" enctype="multipart/form-data" class="vbox invisible">
+            <form action="./registered.html" method="get" enctype="multipart/form-data" class="vbox invisible">
                 <div class="vbox">
                     <label>Nome</label>
                     <input type="text" name="name" placeholder="Nome" required>
@@ -36,7 +36,9 @@
                     <input type="checkbox" class="checkbox" required>
                 </div>
                 <br>
-                <input type="submit" style="background-color: rgba(0, 0, 0, 0.3); box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);" value="Envia pra nóis">
+                <input type="submit"
+                    style="background-color: rgba(0, 0, 0, 0.3); box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);"
+                    value="Envia pra nóis">
             </form>
         </div>
     </main>
