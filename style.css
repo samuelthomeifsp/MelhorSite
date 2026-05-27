@@ -5,16 +5,26 @@
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   color: white;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background: cover;
+}
+
+a {
+  color: lightblue;
 }
 
 main {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .panel,
