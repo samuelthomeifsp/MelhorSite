@@ -54,6 +54,13 @@ input {
   background-color: rgb(0, 0, 0, 0.2);
 }
 
+.vbox:hover,
+.hbox:hover,
+input:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+}
+
 .panel,
 .vbox {
   flex-direction: column;
@@ -65,6 +72,10 @@ input {
   box-shadow: none;
 }
 
+.invisible:hover {
+  background: none;
+}
+
 input {
   color: white;
   border-width: 0px;
@@ -73,7 +84,7 @@ input {
 }
 
 input::placeholder {
-  color: gray;
+  color: white;
 }
 
 .checkbox {
