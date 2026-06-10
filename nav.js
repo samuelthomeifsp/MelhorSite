@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li><a href="index.html">Início</a></li>
                     <li><a href="about.html">Sobre nós</a></li>
                     <li>
-                        <a href="services.html">Serviços ∨</a>
+                        <a href="services.html">Serviços ↆ</a>
                         <ul>
                             <li><a href="dev.html">Desenvolvimento</a></li>
                             <li><a href="design.html">Design Gráfico</a></li>
